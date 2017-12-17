@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+  <LinearLayout
+      android:id="@+id/inputLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:gravity="center"
+      android:orientation="horizontal"
+      android:padding="10dp"
+      >
+    <EditText
+        android:inputType="number"
+        android:id="@+id/firstEt"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        />
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="+"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:inputType="number"
+        android:id="@+id/secondEt"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        />
+  </LinearLayout>
+
+  <Button
+      android:id="@+id/calculateBtn"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/inputLayout"
+      android:layout_margin="20dp"
+      android:text="Calculate"
+      />
+
+  <TextView
+      android:id="@+id/resultTv"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/calculateBtn"
+      android:layout_marginTop="20dp"
+      android:gravity="center"
+      android:text="Result"
+      android:textSize="25sp"
+      android:textStyle="bold"
+      />
+
+  <ProgressBar
+      android:visibility="gone"
+      android:id="@+id/progressBar"
+      android:layout_width="30dp"
+      android:layout_height="30dp"
+      android:layout_centerInParent="true"
+      />
+</RelativeLayout>
