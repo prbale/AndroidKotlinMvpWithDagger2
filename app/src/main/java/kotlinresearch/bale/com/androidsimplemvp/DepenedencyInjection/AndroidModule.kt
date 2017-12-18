@@ -13,7 +13,6 @@ class AndroidModule(private val application: Application) {
 
     @Provides
     @Singleton
-    @ForApplication
     fun provideApplicationContext(): Context = application
 
     @Provides
